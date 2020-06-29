@@ -1,0 +1,254 @@
+header {
+  background: #fff;
+  position: relative;
+  z-index: 3;
+
+  .wrap_first_line {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .wrap_logo {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.logo_link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  .wrap_img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-left: 8px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .logo_text {
+    margin-left: 10px;
+
+    .small {
+      font-size: 10px;
+      display: block;
+      text-align: right;
+      margin-right: 10px;
+      .MLI;
+      margin-top: -10px;
+    }
+
+    .normal {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      .MEB;
+    }
+
+  }
+}
+
+.logo_description {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 3px solid @green;
+  color: @green;
+  max-width: 190px;
+  font-size: 13px;
+  .MR;
+}
+
+.right_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .mail {
+    .icon_mail {
+      display: inline-block;
+      width: 15px;
+      height: 12px;
+      background: url("../img/mail.png") center center / cover no-repeat no-repeat;
+    }
+
+    .mail_adrress {
+      display: inline-block;
+      font-size: 12px;
+      text-decoration: none;
+      .MR;
+    }
+  }
+
+  .phone_number {
+    font-size: 16px;
+    color: @black;
+    text-decoration: none;
+    margin-left: 30px;
+    .MSB;
+  }
+
+  .btn_popup {
+    width: 185px;
+    height: 49px;
+    line-height: 47px;
+    text-decoration: none;
+    border-bottom: 2px solid @blue;
+    border-top: 2px solid @green;
+    border-right: 2px solid @blue ;
+    border-left: 2px solid @green ;
+    text-align: center;
+    margin-left: 30px;
+  }
+}
+
+/* Меню */
+.wrap_menu_full {
+  width: 100%;
+  height: 70px;
+  background: @blue;
+  position: relative;
+  z-index: 2;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+
+  div.sandwich__wrap {
+    width: 216px;
+    position: relative;
+
+    a.sandwich__link {
+      width: 24px;
+      height: 16px;
+      display: inline-block;
+      background: url("../img/sandwich.png") center center / cover no-repeat no-repeat;
+      margin-left: 15%;
+    }
+
+    .sandwich_cross {
+      width: 16px !important;
+      background: url("../img/cross.png") center center / cover no-repeat no-repeat !important;
+    }
+
+    ul.sandwich__content {
+      position: absolute;
+      z-index: 3;
+      background: #fff;
+      height: 300px;
+      width: 320px;
+      overflow-y: auto;
+      top: 45px;
+      box-shadow: 10px 10px 29px rgba(105, 105, 105, 0.36);
+
+
+      li {
+
+        a {
+          color: @black;
+          text-decoration: none;
+          display: block;
+          padding: 20px;
+          font-size: 14px;
+        }
+
+        &:hover {
+          background: @green;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .main_menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    li {
+      margin-right: 45px;
+      display: inline-block;
+      height: 100%;
+      line-height: 70px;
+      transition: border-bottom .3s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transition: border-bottom .3s;
+        border-bottom: 2px solid white;
+      }
+
+       a {
+         color: #fff;
+         text-decoration: none;
+         
+         span {
+           color: #fff;
+         }
+
+         span.angle_down {
+           margin-left: 5px;
+           display: inline-block;
+           width: 7px;
+           height: 7px;
+           background: url("../img/angle_down.png") center center / cover no-repeat no-repeat;
+         }
+       }
+
+      .under_main_menu {
+        position: absolute;
+        z-index: 3;
+        background: #fff;
+        height: 300px;
+        width: 320px;
+        overflow-y: auto;
+        top: 70px;
+        box-shadow: 10px 10px 29px rgba(105, 105, 105, 0.36);
+
+
+        li.under_menu_li {
+          display: block;
+          margin: 0;
+          padding: 0;
+          height: auto;
+          line-height: 16px;
+
+          a {
+            color: @black;
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+            font-size: 14px;
+          }
+
+          &:hover {
+            background: @green;
+            border-bottom: none;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              display: block;
+              padding: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

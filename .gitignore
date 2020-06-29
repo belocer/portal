@@ -1,0 +1,10 @@
+/nbproject/*
+/node_modules/*
+/.git/*
+.git
+package-lock.json
+/.idea/*
+/src/less/smart-grid.less 
+/dist/css/main.css 
+/dist/css/main.css.map
+gulpfile.js

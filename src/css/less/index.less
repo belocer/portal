@@ -1,0 +1,108 @@
+main {
+  position: relative;
+  z-index: 2;
+}
+
+.first_screen {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: '';
+    width: 100%;
+    display: block;
+    position: absolute;
+    background: url("../img/first_screen_blue_bg.jpg") center center / cover no-repeat no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    min-height: 447px;
+  }
+
+  h1.main_h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 85px;
+    margin-bottom: 85px;
+    .MB;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.search_block {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 85px;
+
+  .small_blue_head {
+    display: block;
+    width: 95%;
+    font-size: 14px;
+    color: @blue;
+    .MR;
+  }
+
+  .wrap_search_ul {
+
+    .link_search {
+      font-size: 16px;
+      padding: 0 15px;
+      color: @black;
+      text-decoration: none;
+      background: #fff;
+      height: 70px;
+      line-height: 70px;
+      display: flex;
+      align-items: center;
+      border-right: 1px solid #dadada;
+      box-shadow: 10px 10px 24px rgba(105, 105, 105, 0.26);
+      .MR;
+
+      &:last-child {
+        background: red;
+        border-right: none;
+      }
+
+      .empty_angle_down {
+        display: inline-block;
+        width: 9px;
+        height: 5px;
+        margin-right: 10px;
+        margin-left: 30px;
+        background: url("../img/empty_angle_down.png") center center / cover no-repeat no-repeat;
+      }
+    }
+
+    &:last-child .link_search {
+      background: red;
+      border-right: none;
+    }
+  }
+}
+
+.fast_search {
+  .fast_search__btn {
+    display: inline-block;
+    width: 171px;
+    height: 70px;
+    background: @green;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: 10px 10px 29px rgba(55, 178, 125, 0.36);
+    .MB;
+
+    &:hover {
+      background: darken(@green, 5%);
+    }
+  }
+}
